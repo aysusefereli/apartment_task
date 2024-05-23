@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Raleway"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <span class="header_name">Rental</span>
+      <i
+        id="navbarIcon"
+        class="fa-solid fa-bars page__navbar__menuIcon"
+        aria-hidden="true"
+      ></i>
+    </header>
+    <div class="apartment">
+      <div class="leftPage">
+        <span class="closeNavbar">&times;</span>
+        <p class="rental">Rental</p>
+        <p class="rental" id="text2">from $99</p>
+        <p class="time">per night</p>
+        <div class="leftPageForm">
+          <form class="form">
+            <label>
+              <i
+                class="icon fa-regular fa-calendar-check"
+                style="color: #000000"
+              ></i>
+              Check in
+              <input
+                class="check"
+                id="calendar"
+                type="text"
+                placeholder="DDMMYYYY"
+              />
+              <span class="checkMessages" style="display: none"
+                >This field is required</span
+              >
+              <span class="checkFormat" style="display: none"
+                >Format is not valid.</span
+              >
+            </label>
+            <label>
+              <i class="icon fa-regular fa-calendar" style="color: #000000"></i>
+              Check out
+              <input
+                class="check"
+                type="text"
+                id="calendar"
+                placeholder="DDMMYYYY"
+              />
+              <span class="checkMessages" style="display: none"
+                >This field is required</span
+              >
+              <span class="checkFormat" style="display: none"
+                >Format is not valid.</span
+              >
+            </label>
+            <label>
+              <i class="icon fa-solid fa-person" style="color: #000000"></i>
+              Adults
+              <input
+                class="check"
+                type="number"
+                placeholder="1"
+                id="adultsInput"
+                min="0"
+              />
+            </label>
+            <label>
+              <i
+                class="icon fa-solid fa-child-reaching"
+                style="color: #000000"
+              ></i>
+              Kids
+              <input
+                class="check"
+                type="number"
+                placeholder="0"
+                id="childInput"
+                min="0"
+              />
+            </label>
+            <button class="submitBtn" type="submit">
+              <i class="icon fa-solid fa-magnifying-glass"></i> Search
+              availability
+            </button>
+          </form>
+        </div>
+        <div class="leftFooter">
+          <span class="textLeft"
+            ><i class="fa-solid fa-building"></i> Apartment</span
+          >
+          <span class="textLeft"
+            ><i class="fa-solid fa-rss"></i> Subscribe</span
+          >
+          <span class="textLeft"
+            ><i class="fa-solid fa-envelope"></i> Contact</span
+          >
+        </div>
+      </div>
+      <div class="rightPage">
+        <p class="theApartment">The Apartment</p>
+        <div class="slider">
+          <div class="mySlides">
+            <img
+              class="bigImg"
+              src="https://gurbangurbanzade.github.io/Apartment-Websites/image/livingroom.jpg"
+            />
+          </div>
+          <div class="mySlides">
+            <img
+              class="bigImg"
+              src="https://gurbangurbanzade.github.io/Apartment-Websites/image/diningroom.jpg"
+            />
+          </div>
+          <div class="mySlides">
+            <img
+              class="bigImg"
+              src="https://gurbangurbanzade.github.io/Apartment-Websites/image/bedroom.jpg"
+            />
+          </div>
+          <div class="mySlides">
+            <img
+              class="bigImg"
+              src="https://gurbangurbanzade.github.io/Apartment-Websites/image/livingroom2.jpg"
+            />
+          </div>
+          <div class="caption-container">
+            <span id="caption"></span>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="https://gurbangurbanzade.github.io/Apartment-Websites/image/livingroom.jpg"
+                onclick="currentSlide(1)"
+                alt="Living Room"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="https://gurbangurbanzade.github.io/Apartment-Websites/image/diningroom.jpg"
+                onclick="currentSlide(2)"
+                alt="Dining Room"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="https://gurbangurbanzade.github.io/Apartment-Websites/image/bedroom.jpg"
+                onclick="currentSlide(3)"
+                alt="Bedroom"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="https://gurbangurbanzade.github.io/Apartment-Websites/image/livingroom2.jpg"
+                onclick="currentSlide(4)"
+                alt="Living Room II"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="theSpace">
+          <h1 class="spaceText">The space</h1>
+          <div class="space">
+            <span class="spaceIcons"
+              ><i class="fa-solid fa-person" aria-hidden="true"></i> Max people:
+              4</span
+            >
+            <span class="spaceIcons"
+              ><i class="fa-regular fa-clock" aria-hidden="true"></i> Check In:
+              After 3PM</span
+            >
+            <span class="spaceIcons"
+              ><i class="fa-solid fa-bath" aria-hidden="true"></i> Bathrooms:
+              2</span
+            >
+            <span class="spaceIcons"
+              ><i class="fa-regular fa-clock" aria-hidden="true"></i> Check Out:
+              12PM</span
+            >
+            <span class="spaceIcons"
+              ><i class="fa-solid fa-bed" aria-hidden="true"></i> Bedrooms:
+              1</span
+            >
+          </div>
+        </div>
+        <div class="amenities">
+          <h1 class="amenitiesText">Amenities</h1>
+          <div class="amenitie">
+            <span class="amenitiesIcon"
+              ><i class="fa-solid fa-shower" aria-hidden="true"></i>
+              Shower</span
+            >
+            <span class="amenitiesIcon"
+              ><i class="fa-solid fa-utensils" aria-hidden="true"></i>
+              Kitchen</span
+            >
+            <span class="amenitiesIcon"
+              ><i class="fa-solid fa-wifi" aria-hidden="true"></i> WiFi</span
+            >
+            <span class="amenitiesIcon"
+              ><i
+                class="fa-solid fa-temperature-three-quarters"
+                aria-hidden="true"
+              ></i>
+              Heating</span
+            >
+            <span class="amenitiesIcon"
+              ><i class="fa-solid fa-tv" aria-hidden="true"></i> TV</span
+            >
+            <span class="amenitiesIcon"
+              ><i class="fa-brands fa-accessible-icon" aria-hidden="true"></i>
+              Accessible</span
+            >
+          </div>
+        </div>
+        <div class="extraInfo">
+          <h1 class="extra">Extra Info</h1>
+          <div class="extra_info">
+            <span class="info">
+              Our apartment is really clean and we like to keep it that way.
+              Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </span>
+            <span class="accept">
+              We accept:
+              <i class="fa-solid fa-credit-card" aria-hidden="true"></i>
+              <i class="fa-brands fa-cc-mastercard" aria-hidden="true"></i>
+              <i class="fa-brands fa-cc-amex" aria-hidden="true"></i>
+              <i class="fa-brands fa-cc-paypal" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+        <div class="rules">
+          <h1 class="rulesText">Rules</h1>
+          <div class="textbox">
+            <span class="texts">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </span>
+            <span class="texts">
+              Subscribe to receive updates on available dates and special
+              offers.
+            </span>
+            <button class="btn">Subscribe</button>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal_info">
+                  <h1>SUBSCRIBE</h1>
+                  <p>
+                    Join our mailing list to receive updates on available dates
+                    and special offers.
+                  </p>
+                  <input
+                    type="email"
+                    placeholder="Enter e-mail"
+                    id="sub_email"
+                  />
+                  <span class="checkEmails">Email is not Valid</span>
+                  <button class="subscribe2">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact">
+          <h1 class="footerHeader">Contact</h1>
+          <span class="footerContact"
+            ><i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            Chicago, US</span
+          >
+          <span class="footerContact"
+            ><i class="fa-solid fa-phone" aria-hidden="true"></i> Phone: +00
+            151515</span
+          >
+          <span class="footerContact"
+            ><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email:
+            mail@mail.com</span
+          >
+          <form id="contact-form" class="messageForm">
+            <span class="questions">Questions? Go ahead, ask them:</span>
+            <input
+              id="name"
+              class="messages"
+              type="text"
+              placeholder="Name"
+              onkeyup="deleteMessageError(this)"
+            />
+            <span class="checkMessage">This field is required</span>
+            <input
+              id="email"
+              class="messages"
+              type="email"
+              placeholder="Email"
+              onkeyup="deleteMessageError(this)"
+            />
+            <span class="checkMessage">This field is required</span>
+            <span class="checkEmail">Email is not Valid</span>
+            <input
+              id="message"
+              class="messages"
+              type="text"
+              placeholder="Message"
+              onkeyup="deleteMessageError(this)"
+            />
+            <span class="checkMessage">This field is required</span>
+            <button type="submit" class="messageBtn">Send a Message</button>
+          </form>
+          <span>Powered by <a href="">Gurban Gurbanzade</a></span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/dc87b59015.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

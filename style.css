@@ -1,0 +1,499 @@
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+.apartment {
+  display: flex;
+  flex-direction: row;
+  margin: 250px;
+  border: 1px solid #dedcdc;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+header {
+  display: none;
+}
+
+.leftPage {
+  overflow-y: scroll;
+  position: fixed;
+  background-color: #f1f1f1;
+  width: 280px;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.rightPage {
+  margin-left: 290px;
+  width: 74rem;
+}
+
+.leftFooter {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.textLeft {
+  padding: 10px;
+}
+
+.textLeft:hover {
+  background-color: #aaaaaa;
+}
+
+.rental {
+  font-size: 24px;
+  margin-left: 1.5rem;
+  margin-top: 41px;
+  margin-bottom: 0;
+}
+
+#text2 {
+  margin-top: 1.8rem;
+}
+
+.time {
+  font-size: 16px;
+  margin-left: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #f1f1f1;
+  font-size: 15px;
+  font-style: normal;
+  display: inline-block;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.check {
+  border: 1px solid #dedcdc;
+  padding: 10px;
+  width: 210px;
+}
+
+.submitBtn {
+  background-color: forestgreen;
+  border: 1px solid;
+  margin-top: 10px;
+  margin-left: 1.5rem;
+  background-color: #4caf50;
+  border: none;
+  width: 220px;
+  text-align: left;
+  font-size: 15px;
+  color: white;
+  padding: 10px 16px;
+}
+
+button:hover {
+  background-color: rgb(181, 177, 177);
+  color: #222;
+}
+
+.formIcons {
+  width: 10px;
+  height: 10px;
+}
+
+.theApartment {
+  color: #4caf50;
+  font-size: 30px;
+  margin-bottom: 1.5rem;
+}
+
+.mySlides {
+  display: none;
+}
+
+.bigImg {
+  width: 712px;
+  height: 394px;
+}
+
+.row {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.column {
+  margin-right: 42px;
+  margin-top: 4px;
+}
+
+.demo {
+  cursor: pointer;
+  width: 166px;
+  height: 92px;
+}
+
+.caption-container {
+  background-color: #222;
+  padding: 16px 10px;
+  color: white;
+  position: absolute;
+  top: 420px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.space {
+  display: grid;
+  grid-template-columns: auto auto;
+  border-bottom: 0.05rem solid #eee;
+}
+
+.spaceText {
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.spaceIcons {
+  margin-bottom: 20px;
+}
+
+.amenitie {
+  display: grid;
+  grid-template-columns: auto auto;
+  border-bottom: 0.05rem solid #eee;
+}
+
+.amenitiesText {
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.amenitiesIcon {
+  margin-bottom: 20px;
+}
+
+.extraInfo {
+  border-bottom: 0.05rem solid #eee;
+}
+
+.extra {
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.info {
+  margin: 1.6rem 0rem;
+  width: 100%;
+  display: block;
+  width: 700px;
+}
+
+.accept {
+  margin: 1.6rem 0rem;
+  width: 100%;
+  display: block;
+}
+
+.rules {
+  margin-top: 2.5rem;
+  border-bottom: 0.05rem solid #eee;
+}
+
+.rulesText {
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.texts {
+  margin: 1.6rem 0rem;
+  width: 100%;
+  display: block;
+  width: 700px;
+}
+
+.btn {
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  width: 33.33%;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  padding: 10px 16px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.modal-content {
+  width: 800px;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  text-align: center;
+}
+
+.modal_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sub_email {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  font-size: 1.5rem;
+}
+
+.close {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.contact {
+  border-top: 0.05rem solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.messageForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  width: 200px;
+}
+
+.messageBtn {
+  width: 200px;
+}
+
+.footerContact {
+  margin-bottom: 0.5rem;
+}
+
+.questions {
+  margin-bottom: 1.6rem;
+}
+
+.messages {
+  margin-bottom: 1.4rem;
+  padding: 10px 8px;
+  border: 0.1rem solid #ccc;
+  font-size: 15px;
+  width: 692px;
+}
+
+.checkMessage,
+.checkEmail {
+  margin-top: -1rem;
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+.checkEmails {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+.checkMessages {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+.messageBtn {
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  width: 30%;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 3rem;
+  padding: 10px 8px;
+  font-size: 15px;
+}
+
+.subscribe2 {
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 3rem;
+  padding: 10px 8px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.closeNavbar {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  header {
+    display: block;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 933px;
+    width: 100%;
+    color: white;
+    top: 0;
+    overflow: hidden;
+    padding: 1.3rem 0;
+    z-index: 1;
+  }
+  .closeNavbar {
+    display: block;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  #navbarIcon {
+    margin-right: 10px;
+  }
+  .header_name {
+    margin-left: 10px;
+    font-size: 24px;
+  }
+  .apartment {
+    margin: 0;
+    margin-top: 70px;
+    border: none;
+    margin-right: 10px;
+  }
+
+  .rightPage {
+    margin-left: 10px;
+  }
+
+  .slider {
+    width: 100%;
+    width: 840px;
+  }
+
+  .bigImg {
+    width: 100%;
+  }
+
+  /* .cursor {
+    width: 100%;
+    width: 226px;
+    height: 105px;
+  } */
+
+  .column {
+    margin-right: 73px;
+  }
+
+  .leftPage {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 32%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: #f1f1f1;
+  }
+
+  .leftPage.showLeftPage {
+    display: block;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .messages {
+    width: 97%;
+  }
+
+  .texts {
+    width: 97%;
+    width: auto;
+  }
+
+  .info {
+    width: 97%;
+  }
+}
